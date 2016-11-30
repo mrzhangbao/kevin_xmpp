@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kevin_xmpp.activity.ChatActivity">
+
+    <TextView
+        android:id="@+id/chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        android:background="@color/topTitle"
+        android:textSize="25sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        />
+
+    <ListView
+        android:id="@+id/chat_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="10%"
+        >
+        <!-- 输入内容框-->
+        <EditText
+            android:id="@+id/chat_EtBody"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="80%"
+            />
+        <!-- 发送按钮-->
+        <Button
+            android:id="@+id/chat_BtSendBody"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%"
+            android:textSize="20sp"
+            android:text="发送"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <ImageView
+            android:id="@+id/contacts_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher"
+            app:layout_widthPercent="10%"
+            app:layout_marginLeftPercent="2%"
+            />
+
+        <TextView
+            android:id="@+id/contacts_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textSize="20sp"
+            app:layout_marginLeftPercent="4%" />
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

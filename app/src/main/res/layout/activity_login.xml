@@ -1,0 +1,108 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/id_userIcon_imgv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_launcher"
+        app:layout_heightPercent="20%"
+        app:layout_marginLeftPercent="28%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="45%" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/id_userAccount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/id_userIcon_imgv"
+        android:background="#FFFFFFFF"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="5%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_user_account"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/login_text_size"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_widthPercent="25%" />
+
+        <EditText
+            android:id="@+id/id_username_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:hint="@string/hint_user_account"
+            android:text="admin"
+            android:textColor="@color/colorHint"
+            app:layout_widthPercent="65%" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/id_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/id_userAccount"
+        android:background="#FFFFFFFF"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="1%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_password"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/login_text_size"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_widthPercent="25%" />
+
+        <EditText
+            android:id="@+id/id_password_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:hint="@string/hint_password"
+            android:text="admin"
+            android:inputType="textPassword"
+            android:textColor="@color/colorHint"
+            app:layout_widthPercent="65%" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <Button
+        android:id="@+id/id_login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/id_password_layout"
+        android:background="@drawable/login_button_bg"
+        android:text="@string/login_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="5%" />
+
+    <Button
+        android:id="@+id/login_register_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_login_bt"
+        android:layout_centerInParent="true"
+        android:textColor="@color/loginButton"
+        android:background="@null"
+        app:layout_marginRightPercent="5%"
+        android:text="@string/register"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
